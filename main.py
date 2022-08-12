@@ -3,9 +3,9 @@ import os
 
 URL= 'https://api.github.com/repos/shradaya/GA-2/dispatches'
 Headers= {
-    'Authorization': f"Bearer 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", #{os.environ['REPOSITORY_TOKEN']}",
+    'Authorization': f"Bearer {os.environ['REPOSITORY_TOKEN']}",
     'Accept': 'application/vnd.github.v3+json',
-    'Content-Type': 'application/json',
+    'Content-Type': 'application/json'
 }
 Body= {
     'event_type': 'custom_event_type'
